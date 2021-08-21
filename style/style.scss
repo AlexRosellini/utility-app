@@ -1,0 +1,82 @@
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(/ressources/512.jpg);
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: -200px;
+    grid-template-areas: 
+    "city weather"
+    "temperature weather";
+
+    &__city {
+
+        grid-area: city;
+        height: 95%;
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: rgba(5, 5, 146, 0.623);
+
+        p {
+            font-size: 24px;
+            color: white;
+            font-family: impact;
+        }
+    }
+
+    &__weather {
+        grid-area: weather;
+        height: 100%;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(5, 5, 146, 0.623);
+
+        
+        & p {
+            font-size: 16px;
+            color: white;
+            font-family: roboto;
+            margin-top: -10px;
+        }
+
+        & img {
+            object-fit: cover;
+            height: 150px;
+            width: 200px;
+        }
+
+    }
+
+    &__temperature {
+        grid-area: temperature;
+        height: 100%;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(5, 5, 146, 0.623);
+
+        & p {
+            font-size: 16px;
+            color: white;
+            font-family: roboto;
+        }
+
+        & span {
+            font-weight: bold;
+        }
+    }
+}
