@@ -4,7 +4,7 @@ main {
 }
 
 body {
-  background-image: url(./ressources/512.jpg);
+  background-image: url(../ressources/512.jpg);
 }
 
 .weather {
@@ -14,8 +14,7 @@ body {
       grid-template-columns: 1fr 1fr;
   -webkit-column-gap: -200px;
           column-gap: -200px;
-      grid-template-areas: "city weather"
- "temperature weather";
+      grid-template-areas: "city weather" "temperature weather";
 }
 
 .weather__city {
