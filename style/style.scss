@@ -3,8 +3,76 @@ main {
     margin: 0px;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    border-bottom: 1px solid black;
+
+    & img {
+        height: 90px;
+        object-fit: cover;
+        padding-right: 10px;
+    }
+
+    & nav {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+}
+
+.nav__utilities {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav__lang {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    & a {
+        padding-left: 10px;
+    }
+}
+
+.bloc {
+    margin-top: 10px;   
+}
+
 body {
     background-image: url(../ressources/512.jpg);
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    &__input {
+        width: 50%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        & ::placeholder {
+            text-align: center;
+        }
+    }
+
+    & input {
+        width: 95%;
+
+
+    }
+
+    &__btn {
+        margin-left: -15px;
+    }
+
 }
 
 .weather {
