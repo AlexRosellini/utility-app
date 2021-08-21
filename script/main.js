@@ -6,7 +6,7 @@ async function getLocation() {
         console.log(position)
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
-        const apiUrl =  `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=d24f35dccd27d67ccaa62ae5b282cafc`
+        const apiUrl =  `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=d24f35dccd27d67ccaa62ae5b282cafc&`
         const response = await fetch(apiUrl);
         const meteo = await response.json();
         console.log(meteo)
