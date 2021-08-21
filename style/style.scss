@@ -141,10 +141,59 @@ body {
             font-size: 16px;
             color: white;
             font-family: roboto;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         & span {
             font-weight: bold;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    header {
+        height: 120px;
+        & nav {
+            flex-direction: column;
+            height: 20px;
+
+            & h1 {
+                padding: 0px;
+                font-size: 18px;                
+            }
+        }
+
+
+    }
+    
+    .header__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .nav__lang {
+        text-align: center;
+        margin-top: 0px;
+    
+        & a, a:link, a:visited {
+            padding-top: 0px;
+        }
+    }
+
+    .weather {
+        display: flex;
+        flex-direction: column;
+
+        &__city {
+            margin-bottom: 5px;
+        }
+        &__temperature {
+            margin-top: 5px;
         }
     }
 }
