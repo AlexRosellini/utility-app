@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 100px;
+    background-color: $primary;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    
+    
+    &__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include padding-LR-20;
+    }
+
+    & img {
+        height: 75px;
+    }
+
+    & h1 {
+        font-size: 26px;
+        padding-left: 10px
+    }
+}
+

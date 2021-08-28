@@ -1,0 +1,55 @@
+/*******************************************/
+//flex
+
+@mixin Flex-C {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*******************************************/
+//padding
+
+@mixin padding-LR-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@mixin padding-LR-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin padding-TB-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@mixin padding-TB-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*******************************************/
+//Margin
+
+@mixin margin-LR-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@mixin margin-LR-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@mixin margin-TB-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@mixin margin-TB-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,23 @@
+.nav {
+    @include Flex-C;
+    background-color: rgb(97, 141, 170);
+
+    &__gadget {
+        @include Flex-C;
+        @include padding-LR-10;
+        
+        & a:link, a:visited {
+            padding-left: 10px;
+        }
+    }
+    
+    &__lang {
+        @include Flex-C;
+        @include padding-LR-10;
+
+        & a:link, a:visited {
+            padding-left: 10px;
+        }
+
+    }
+}
